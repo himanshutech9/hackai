@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .chat-bubble {
+    @apply max-w-xs lg:max-w-md px-4 py-2 rounded-lg shadow-sm;
+  }
+  
+  .chat-bubble-user {
+    @apply bg-primary-500 text-white ml-auto;
+  }
+  
+  .chat-bubble-bot {
+    @apply bg-white text-gray-800 border border-gray-200;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-rescue {
+    @apply bg-rescue-500 hover:bg-rescue-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+} 
